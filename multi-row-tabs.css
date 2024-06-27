@@ -6,8 +6,8 @@
 /* Configuration */
 :root {
     /* That will be the minimum width of a tab. You can adjust the number as you like. */
-    --mrt-min-tab-width: 100px;
-    --mrt-min-pinned-tab-width: 100px;
+    --mrt-min-tab-width: 200px;
+    --mrt-min-pinned-tab-width: 60px;
 }
 
 /* Changes to allow multi row tab bar */
@@ -29,6 +29,16 @@
 #browser:is(.tabs-top, .tabs-bottom) .tab-strip > .tab-position {
     display: inline-block;
     position: relative;
+}
+
+#browser:is(.tabs-top, .tabs-bottom) .tab-position.tab-yield-space {
+    --PositionX: 0px !important;
+    height: 28px !important;
+}
+
+#browser:is(.tabs-top, .tabs-bottom) .tab-strip > span > .tab-position {
+    --PositionX: 0px !important;
+    height: 28px !important;
 }
 
 /* Regular tabs */
