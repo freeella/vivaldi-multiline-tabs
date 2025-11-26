@@ -8,6 +8,7 @@
     /* That will be the minimum width of a tab. You can adjust the number as you like. */
     --mrt-min-tab-width: 200px;
     --mrt-min-pinned-tab-width: 60px;
+    --mrt-tab-row: 3;
 }
 
 /* Changes to allow multi row tab bar */
